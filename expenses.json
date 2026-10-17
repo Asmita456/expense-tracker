@@ -1,9 +1,9 @@
 [
     {
-        "title": "Bus Fare",
+        "title": "Fare",
         "category": "Transport",
-        "amount": 50.0,
-        "date": "2026-10-15",
-        "note": "College travel"
+        "amount": 300.0,
+        "date": "2026-10-16",
+        "note": "bus faree"
     }
 ]
