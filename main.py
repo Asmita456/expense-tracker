@@ -7,10 +7,16 @@ from services.expense_service import (
     delete_expense,
 )
 from services.summary_service import show_summary
+from services.budget_service import (
+    load_budgets,
+    set_monthly_budget,
+    show_monthly_budget,
+)
 
 
 def main():
     expenses = load_expenses()
+    budgets = load_budgets()
 
     while True:
         print("\n===== EXPENSE TRACKER =====")
@@ -19,9 +25,11 @@ def main():
         print("3. Show Expense Summary")
         print("4. Filter by Category")
         print("5. Delete Expense")
-        print("6. Exit")
+        print("6. Set Monthly Budget")
+        print("7. View Monthly Budget")
+        print("8. Exit")
 
-        choice = input("Enter your choice (1-6): ").strip()
+        choice = input("Enter your choice (1-8): ").strip()
 
         if choice == "1":
             add_expense(expenses)
@@ -39,11 +47,17 @@ def main():
             delete_expense(expenses)
 
         elif choice == "6":
+            set_monthly_budget(budgets)
+
+        elif choice == "7":
+            show_monthly_budget(budgets, expenses)
+
+        elif choice == "8":
             print("Thank you for using Expense Tracker!")
             break
 
         else:
-            print("Invalid choice. Please select 1-6.")
+            print("Invalid choice. Please select 1-8.")
 
 
 if __name__ == "__main__":
