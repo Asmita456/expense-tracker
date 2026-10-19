@@ -7,8 +7,8 @@
         "note": "bus faree"
     },
     {
-        "title": "Transport",
-        "category": "Fare",
+        "title": "Fare",
+        "category": "Transport",
         "amount": 100.0,
         "date": "2026-10-17",
         "note": "mnc"
@@ -19,5 +19,19 @@
         "amount": 180.0,
         "date": "2026-10-18",
         "note": "office"
+    },
+    {
+        "title": "Bus Fare",
+        "category": "Transport",
+        "amount": 400.0,
+        "date": "2026-10-18",
+        "note": "Bus fare to college"
+    },
+    {
+        "title": "Lunch",
+        "category": "Food",
+        "amount": 180.0,
+        "date": "2026-10-17",
+        "note": "lunch at office"
     }
 ]
