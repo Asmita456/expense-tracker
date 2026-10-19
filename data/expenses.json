@@ -5,5 +5,19 @@
         "amount": 300.0,
         "date": "2026-10-17",
         "note": "bus faree"
+    },
+    {
+        "title": "Fare",
+        "category": "Transport",
+        "amount": 400.0,
+        "date": "2026-10-18",
+        "note": "bus faree"
+    },
+    {
+        "title": "Transport",
+        "category": "Fare",
+        "amount": 100.0,
+        "date": "2026-10-17",
+        "note": "mnc"
     }
 ]
